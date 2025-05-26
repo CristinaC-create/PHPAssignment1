@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Discount Calculator</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+
+<body>
+    <main>
+        <h1>Product Discount Calculator</h1>
+        <form action="display_discount.php" method="post">
+
+            <div id="data">
+                <label>Product Description:</label>
+                <input type="text" name="product_description" required><br>
+
+                <label>List Price:</label>
+                <input type="text" name="list_price" required><br>
+
+                <label>Discount Percent:</label>
+                <input type="text" name="discount_percent" required><span>%</span><br>
+
+                <label>Sales Tax:</label>
+                <input type="text" value="8%" disabled><br>
+                <small>(Fixed rate applied to discounted price)</small>
+            </div>
+
+            <div id="buttons">
+                <label>&nbsp;</label>
+                <input type="submit" value="Calculate Discount"><br>
+            </div>
+
+        </form>
+    </main>
+</body>
+</html>
